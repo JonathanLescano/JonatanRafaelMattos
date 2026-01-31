@@ -575,9 +575,9 @@ button {
         padding: 1.5rem;
         text-align: left !important;
 
-        /* RESTORE GLASS EFFECT - DARKER FOR CONTRAST */
-        background: rgba(15, 23, 42, 0.75);
-        /* Darker background to verify white text */
+        /* RESTORE GLASS EFFECT */
+        background: rgba(255, 255, 255, 0.2);
+        /* Translucent */
         /* Translucent */
         backdrop-filter: blur(20px);
         -webkit-backdrop-filter: blur(20px);
@@ -590,6 +590,12 @@ button {
         /* Reset specific desktop animations if needed, main slide animation handles entry */
         transform: none !important;
         animation: none !important;
+    }
+
+    /* SPECIFIC FIX: Only the first slide needs the dark background for contrast */
+    .slide:first-child .glass-card {
+        background: rgba(15, 23, 42, 0.75);
+        border: 1px solid rgba(255, 255, 255, 0.1);
     }
 
     .glass-card .hero-title {
