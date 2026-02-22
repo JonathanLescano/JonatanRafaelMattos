@@ -63,10 +63,34 @@ document.addEventListener('DOMContentLoaded', () => {
                 navLinks.style.background = 'white';
                 navLinks.style.padding = '20px';
                 navLinks.style.boxShadow = '0 10px 15px -3px rgba(0, 0, 0, 0.1)';
+                navLinks.style.alignItems = 'flex-start';
+                navLinks.style.gap = '20px';
             } else {
                 navLinks.style.display = ''; // Revert to stylesheet
                 // Remove inline styles to let media query take over
                 navLinks.removeAttribute('style');
+            }
+        });
+    }
+
+    // Dropdown mobile toggle
+    const dropdownToggle = document.querySelector('.dropdown-toggle');
+    if (dropdownToggle) {
+        dropdownToggle.addEventListener('click', (e) => {
+            if (window.innerWidth <= 768) {
+                e.preventDefault();
+                const menu = dropdownToggle.nextElementSibling;
+                if (menu.style.display === 'block') {
+                    menu.style.display = 'none';
+                } else {
+                    menu.style.display = 'block';
+                    menu.style.position = 'relative';
+                    menu.style.boxShadow = 'none';
+                    menu.style.paddingLeft = '15px';
+                    menu.style.opacity = '1';
+                    menu.style.visibility = 'visible';
+                    menu.style.transform = 'none';
+                }
             }
         });
     }

@@ -147,12 +147,13 @@ button {
 .logo {
     font-family: 'Outfit', sans-serif;
     font-weight: 700;
-    font-size: clamp(1.1rem, 4vw, 1.5rem);
-    color: var(--primary-dark);
+    font-size: clamp(0.95rem, 3.5vw, 1.5rem);
+    color: var(--primary-color);
     display: flex;
     align-items: center;
-    gap: 10px;
-    white-space: nowrap;
+    gap: 8px;
+    white-space: normal;
+    line-height: 1.2;
 }
 
 .logo-icon {
@@ -207,6 +208,63 @@ button {
 
 .nav-link:hover::after {
     width: 100%;
+}
+
+.nav-item-dropdown {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.dropdown-toggle {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    background: none;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    color: var(--text-main);
+    font-weight: 500;
+}
+
+.dropdown-toggle:hover {
+    color: var(--primary-color);
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 220px;
+    background: var(--white);
+    border-radius: var(--radius-md);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: all 0.3s ease;
+    z-index: 1000;
+}
+
+.nav-item-dropdown:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.dropdown-item {
+    display: block;
+    padding: 10px 20px;
+    color: var(--text-main);
+    font-weight: 500;
+    transition: background 0.2s, color 0.2s;
+}
+
+.dropdown-item:hover {
+    background: var(--bg-light);
+    color: var(--primary-color);
 }
 
 .mobile-menu-btn {
@@ -349,9 +407,11 @@ button {
 }
 
 .hero-title {
-    font-size: 3.5rem;
+    font-size: clamp(2rem, 8vw, 3.5rem);
     margin-bottom: 1.5rem;
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    word-break: break-word;
+    overflow-wrap: break-word;
 }
 
 /* Layout Right Alternations */
@@ -967,4 +1027,45 @@ button {
     /* Increased padding */
     max-width: 750px;
     /* Wider for big screens */
+}
+
+/* Mini Image Gallery */
+.mini-gallery-container {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px dashed rgba(0, 0, 0, 0.1);
+}
+
+.mini-gallery-title {
+    font-size: 1.05rem;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.mini-gallery {
+    display: flex;
+    overflow-x: auto;
+    gap: 15px;
+    padding-bottom: 10px;
+    scroll-snap-type: x mandatory;
+}
+
+.mini-gallery::-webkit-scrollbar {
+    height: 6px;
+}
+
+.mini-gallery::-webkit-scrollbar-thumb {
+    background: var(--primary-light);
+    border-radius: 4px;
+}
+
+.mini-gallery img {
+    height: 140px;
+    width: auto;
+    border-radius: 8px;
+    object-fit: cover;
+    scroll-snap-align: start;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(0, 0, 0, 0.05);
 }

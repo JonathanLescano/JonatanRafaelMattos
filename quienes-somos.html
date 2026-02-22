@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiénes Somos | Juntos por un Futuro Mejor</title>
+    <link rel="icon" href="iconopage.png" type="image/png">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <!-- Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        .page-header {
+            background: var(--primary-color);
+            color: white;
+            padding: 120px 20px 60px;
+            text-align: center;
+        }
+
+        .page-content {
+            max-width: 900px;
+            margin: 60px auto;
+            padding: 0 20px;
+        }
+
+        .page-content h3 {
+            color: var(--primary-color);
+            margin-top: 40px;
+        }
+
+        .page-content p {
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+            color: var(--text-muted);
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="images/icononavbar.png" alt="Logo" class="nav-logo-img" height="64">
+                Jonatan Rafael Mattos
+            </a>
+            <button class="mobile-menu-btn" aria-label="Menu" aria-expanded="false">
+                <i data-lucide="menu"></i>
+            </button>
+            <div class="nav-links">
+                <a href="index.html" class="nav-link">Home</a>
+                <div class="nav-item-dropdown">
+                    <button class="nav-link dropdown-toggle">Proyecto <i data-lucide="chevron-down"></i></button>
+                    <div class="dropdown-menu">
+                        <a href="quienes-somos.html" class="dropdown-item">Quiénes somos</a>
+                        <a href="mision-y-objetivo.html" class="dropdown-item">Misión y objetivo</a>
+                        <a href="fundadores.html" class="dropdown-item">Fundadores</a>
+                        <a href="impacto-y-transparencia.html" class="dropdown-item">Impacto y transparencia</a>
+                    </div>
+                </div>
+                <a href="contactanos.html" class="nav-link">Contáctanos</a>
+                <a href="https://wa.me/5493764886560" target="_blank" class="btn-primary">Donar</a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1 class="hero-title">Quiénes Somos</h1>
+                <p class="hero-description">Conoce la historia y justificación detrás de este proyecto social</p>
+            </div>
+        </section>
+
+        <section class="page-content">
+            <p>Campaña de recolección de ropa y elementos de
+                higiene personal para los pacientes del Hospital Dr. Ramón Carrillo.</p>
+
+            <h3>Justificación</h3>
+            <p>Los pacientes del hospital, muchos de los cuales son de larga permanencia o provienen de contextos de
+                vulnerabilidad social, a menudo no cuentan con ropa adecuada a la estación o elementos básicos de
+                higiene. Proveer estos insumos es fundamental para garantizar su dignidad, comodidad y bienestar
+                general, elementos clave en su proceso de rehabilitación e inclusión social.</p>
+
+            <h3>Enfoque Biopsicosocial</h3>
+            <p>La psicología moderna entiende que la salud mental no se trata solo de biología o de terapias
+                individuales. Este proyecto aborda las dimensiones sociales y ocupacionales, reconociendo que un
+                individuo es parte de una comunidad y que su bienestar depende de su capacidad para interactuar con
+                ella.</p>
+
+            <h3>Lucha contra el Estigma y la Discriminación</h3>
+            <p>Un pilar fundamental de la formación en psicología es la ética y la promoción de la dignidad humana. Nos
+                identificamos con la misión del proyecto de usar la interacción comunitaria y las redes sociales como
+                herramientas activas para derribar barreras y prejuicios. El estigma es a menudo más incapacitante que
+                la propia condición mental. En resumen, este proyecto representa la aplicación práctica de los valores
+                humanistas y comunitarios, demostrando que la recuperación va más allá del consultorio, y que la
+                comunidad es un agente terapéutico vital.</p>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-content container">
+            <div class="footer-brand">
+                <div class="footer-brand-container">
+                    <div class="footer-brand-text">
+                        <img src="images/iconofooter.png" alt="Logo" class="footer-logo-img">
+                        <h3>Jonatan Rafael Mattos</h3>
+                        <p>Iniciativa para juntos hacer la diferencia.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-social">
+                <h4>Síguenos</h4>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/jonatanrafaelmattos_/" target="_blank" aria-label="Instagram"><i
+                            data-lucide="instagram"></i></a>
+                    <a href="https://www.youtube.com/@jonatanrafaelmattos44" target="_blank" aria-label="YouTube"><i
+                            data-lucide="youtube"></i></a>
+                    <a href="https://wa.me/5493764886560" target="_blank" aria-label="WhatsApp"><i
+                            data-lucide="message-circle"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Todos los derechos reservados.</p>
+            <p style="font-size: 0.75rem; opacity: 0.8; margin-top: 5px;">Developer by JL</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+
+</html>

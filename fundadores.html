@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundadores | Juntos por un Futuro Mejor</title>
+    <link rel="icon" href="iconopage.png" type="image/png">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <!-- Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        .page-header {
+            background: var(--primary-color);
+            color: white;
+            padding: 120px 20px 60px;
+            text-align: center;
+        }
+
+        .page-content {
+            max-width: 900px;
+            margin: 60px auto;
+            padding: 0 20px;
+        }
+
+        .founder-card {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+            margin-bottom: 50px;
+            background: var(--bg-light);
+            padding: 30px;
+            border-radius: var(--radius-lg);
+            box-shadow: var(--card-shadow);
+        }
+
+        .founder-card img {
+            width: 250px;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+
+        .founder-info h2 {
+            color: var(--primary-dark);
+            margin-bottom: 15px;
+        }
+
+        .founder-info p {
+            font-size: 1.1rem;
+            color: var(--text-muted);
+            line-height: 1.6;
+        }
+
+        @media (max-width: 768px) {
+            .founder-card {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .founder-card img {
+                width: 200px;
+                height: 200px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="images/icononavbar.png" alt="Logo" class="nav-logo-img" height="64">
+                Jonatan Rafael Mattos
+            </a>
+            <button class="mobile-menu-btn" aria-label="Menu" aria-expanded="false">
+                <i data-lucide="menu"></i>
+            </button>
+            <div class="nav-links">
+                <a href="index.html" class="nav-link">Home</a>
+                <div class="nav-item-dropdown">
+                    <button class="nav-link dropdown-toggle">Proyecto <i data-lucide="chevron-down"></i></button>
+                    <div class="dropdown-menu">
+                        <a href="quienes-somos.html" class="dropdown-item">Quiénes somos</a>
+                        <a href="mision-y-objetivo.html" class="dropdown-item">Misión y objetivo</a>
+                        <a href="fundadores.html" class="dropdown-item">Fundadores</a>
+                        <a href="impacto-y-transparencia.html" class="dropdown-item">Impacto y transparencia</a>
+                    </div>
+                </div>
+                <a href="contactanos.html" class="nav-link">Contáctanos</a>
+                <a href="https://wa.me/5493764886560" target="_blank" class="btn-primary">Donar</a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1 class="hero-title">Fundadores</h1>
+                <p class="hero-description">Las personas detrás de la iniciativa y su compromiso con la salud pública
+                </p>
+            </div>
+        </section>
+
+        <section class="page-content">
+            <div class="founder-card">
+                <img src="images/Fundadores/Jonathan Rafael Mattos.jpg" alt="Jonatan Rafael Mattos">
+                <div class="founder-info">
+                    <h2 style="margin-bottom: 5px;">Jonatan Rafael Mattos</h2>
+                    <h3 style="color: var(--primary-color); font-size: 1.1rem; margin-bottom: 15px; font-weight: 500;">
+                        Fundador - Embajador</h3>
+                    <p>Con una sólida base de conocimientos y una profunda vocación por la Psicología, Jonatan busca
+                        aplicar sus habilidades y herramientas al servicio de la comunidad a través de este proyecto
+                        social. Su compromiso y responsabilidad reflejan los valores de disciplina y perseverancia que
+                        también lo han acompañado al representar a Argentina internacionalmente (Mister Cultura
+                        Continental). Entendiendo que cada experiencia es una oportunidad de aprendizaje, Jonatan enfoca
+                        sus esfuerzos en iniciativas que promuevan el bienestar comunitario, combatan el estigma social
+                        y fortalezcan los lazos humanos.</p>
+                </div>
+            </div>
+
+            <div class="founder-card">
+                <img src="images/Fundadores/Yamila Danieluk.jpeg" alt="Yamila Danieluk">
+                <div class="founder-info">
+                    <h2 style="margin-bottom: 5px;">Yamila Danieluk</h2>
+                    <h3 style="color: var(--primary-color); font-size: 1.1rem; margin-bottom: 15px; font-weight: 500;">
+                        Fundadora - Administradora</h3>
+                    <p>Como estudiante avanzada de Medicina y firme defensora de la salud pública, Yamila aporta su
+                        profunda vocación humana a esta iniciativa. Su visión en la logística de las donaciones para el
+                        Hospital "Dr. Ramón Carrillo" no solo facilita la distribución de insumos esenciales de higiene
+                        y vestimenta, sino que busca integrar la empatía al proceso de atención sanitaria. Yamila
+                        entiende que acompañar con solidaridad a los pacientes en rehabilitación es un pilar tan
+                        importante como el cuidado clínico, generando un impacto directo en su calidad de vida.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-content container">
+            <div class="footer-brand">
+                <div class="footer-brand-container">
+                    <div class="footer-brand-text">
+                        <img src="images/iconofooter.png" alt="Logo" class="footer-logo-img">
+                        <h3>Jonatan Rafael Mattos</h3>
+                        <p>Iniciativa para juntos hacer la diferencia.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-social">
+                <h4>Síguenos</h4>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/jonatanrafaelmattos_/" target="_blank" aria-label="Instagram"><i
+                            data-lucide="instagram"></i></a>
+                    <a href="https://www.youtube.com/@jonatanrafaelmattos44" target="_blank" aria-label="YouTube"><i
+                            data-lucide="youtube"></i></a>
+                    <a href="https://wa.me/5493764886560" target="_blank" aria-label="WhatsApp"><i
+                            data-lucide="message-circle"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Todos los derechos reservados.</p>
+            <p style="font-size: 0.75rem; opacity: 0.8; margin-top: 5px;">Developer by JL</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+
+</html>
